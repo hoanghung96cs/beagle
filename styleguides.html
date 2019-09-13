@@ -1,0 +1,3251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Styleguides</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="Styleguides" />
+    <meta name="keywords" content="Styleguides" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="css/main.css" />
+    <style>
+      body {
+        background-color: #fff;
+        padding: 0;
+      }
+
+      .code-example {
+        margin-bottom: 25px;
+      }
+
+      .code-example .demo {
+        box-sizing: border-box;
+        padding: 1.5rem;
+        position: relative;
+        border: 1px solid rgba(0, 0, 0, 0.125);
+        border-radius: 0.25rem 0.25rem 0 0;
+      }
+
+      .code-example pre {
+        margin: 0;
+        background-color: rgba(0, 0, 0, 0.125);
+        padding: 15px;
+        border-radius: 0 0 0.25rem 0.25rem;
+      }
+
+      .demo__title {
+        margin-bottom: 20px;
+        font-weight: 400;
+      }
+
+      .list-group {
+        position: sticky;
+        top: 0;
+        max-height: 90vh;
+        overflow-y: auto;
+      }
+
+      @media (max-width: 576px) {
+        .list-group {
+          position: relative;
+          margin-bottom: 24px;
+          max-height: auto;
+        }
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row justify-content-between align-items-center pt-4 pb-4">
+        <div class="col-auto mr-auto">
+          <h2>{ Beagle } Style Guides</h2>
+        </div>
+        <div class="col-auto"><a class="btn btn-success" href="page-list.html">Back to list of page</a></div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-sm-3 col-md-3 col-lg-2 col-xl-2">
+          <div class="list-group" id="v-pills-tab" role="tablist" aria-orientation="vertical"><a class="list-group-item active" data-toggle="pill" role="tab" aria-selected="true" id="v-pills-colors-tab" href="#v-pills-colors" aria-controls="v-pills-colors">Colors</a><a class="list-group-item" data-toggle="pill" role="tab" aria-selected="true" id="v-pills-button-tab" href="#v-pills-button" aria-controls="v-pills-button">Buttons</a><a class="list-group-item" data-toggle="pill" role="tab" aria-selected="true" id="v-pills-input-tab" href="#v-pills-input" aria-controls="v-pills-input">Inputs</a><a class="list-group-item" data-toggle="pill" role="tab" aria-selected="true" id="v-pills-checkbox-tab" href="#v-pills-checkbox" aria-controls="v-pills-checkbox">Checkboxes</a><a class="list-group-item" data-toggle="pill" role="tab" aria-selected="true" id="v-pills-radio-tab" href="#v-pills-radio" aria-controls="v-pills-radio">Radios</a><a class="list-group-item" data-toggle="pill" role="tab" aria-selected="true" id="v-pills-switch-tab" href="#v-pills-switch" aria-controls="v-pills-switch">Switches</a><a class="list-group-item" data-toggle="pill" role="tab" aria-selected="true" id="v-pills-date-tab" href="#v-pills-date" aria-controls="v-pills-date">DatetimePicker</a>
+          </div>
+        </div>
+        <div class="col-12 col-sm-9 col-md-9 col-lg-10 col-xl-10">
+          <div class="tab-content" id="v-pills-tabContent">
+            <div class="tab-pane fade show active" role="tabpanel" id="v-pills-colors" aria-labelledby="v-pills-colors-tab">
+              <div class="row">
+                <div class="col-12">
+                  <div class="table-responsive">
+                    <table class="table table-hover">
+                      <tr>
+                        <th style="width:5%">No</th>
+                        <th style="width:25%">Variables</th>
+                        <th style="width:25%">Value</th>
+                        <th>Preview</th>
+                      </tr>
+                      <tr>
+                        <td>0</td>
+                        <td>$cl-white</td>
+                        <td>#fff</td>
+                        <td style="background:#fff"></td>
+                      </tr>
+                      <tr>
+                        <td>1</td>
+                        <td>$cl-dark</td>
+                        <td>#000</td>
+                        <td style="background:#000"></td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>$cl-dark-medium</td>
+                        <td>#272727</td>
+                        <td style="background:#272727"></td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>$cl-dark-light</td>
+                        <td>#404040</td>
+                        <td style="background:#404040"></td>
+                      </tr>
+                      <tr>
+                        <td>4</td>
+                        <td>$cl-dark-light-1</td>
+                        <td>#646464</td>
+                        <td style="background:#646464"></td>
+                      </tr>
+                      <tr>
+                        <td>5</td>
+                        <td>$cl-dark-light-3</td>
+                        <td>#666</td>
+                        <td style="background:#666"></td>
+                      </tr>
+                      <tr>
+                        <td>6</td>
+                        <td>$cl-dark-light-5</td>
+                        <td>#808080</td>
+                        <td style="background:#808080"></td>
+                      </tr>
+                      <tr>
+                        <td>7</td>
+                        <td>$cl-dark-light-4</td>
+                        <td>#878787</td>
+                        <td style="background:#878787"></td>
+                      </tr>
+                      <tr>
+                        <td>8</td>
+                        <td>$cl-dark-light-2</td>
+                        <td>#999</td>
+                        <td style="background:#999"></td>
+                      </tr>
+                      <tr>
+                        <td>9</td>
+                        <td>$cl-blue-light-2</td>
+                        <td>#5E97F6</td>
+                        <td style="background:#5E97F6"></td>
+                      </tr>
+                      <tr>
+                        <td>10</td>
+                        <td>$cl-blue-light</td>
+                        <td>#4c8bf5</td>
+                        <td style="background:#4c8bf5"></td>
+                      </tr>
+                      <tr>
+                        <td>11</td>
+                        <td>$cl-blue</td>
+                        <td>#4285f4</td>
+                        <td style="background:#4285f4"></td>
+                      </tr>
+                      <tr>
+                        <td>12</td>
+                        <td>$cl-blue-medium</td>
+                        <td>#2572f2</td>
+                        <td style="background:#2572f2"></td>
+                      </tr>
+                      <tr>
+                        <td>13</td>
+                        <td>$cl-blue-dark</td>
+                        <td>#1266f1</td>
+                        <td style="background:#1266f1"></td>
+                      </tr>
+                      <tr>
+                        <td>14</td>
+                        <td>$cl-blue-dark-1</td>
+                        <td>#0c57d3</td>
+                        <td style="background:#0c57d3"></td>
+                      </tr>
+                      <tr>
+                        <td>15</td>
+                        <td>$cl-red-light-3</td>
+                        <td>#ef6e63</td>
+                        <td style="background:#ef6e63"></td>
+                      </tr>
+                      <tr>
+                        <td>16</td>
+                        <td>$cl-red-light-2</td>
+                        <td>#ed5f53</td>
+                        <td style="background:#ed5f53"></td>
+                      </tr>
+                      <tr>
+                        <td>17</td>
+                        <td>$cl-red-light-1</td>
+                        <td>#eb4c3e</td>
+                        <td style="background:#eb4c3e"></td>
+                      </tr>
+                      <tr>
+                        <td>18</td>
+                        <td>$cl-red-light</td>
+                        <td>#ea4335</td>
+                        <td style="background:#ea4335"></td>
+                      </tr>
+                      <tr>
+                        <td>19</td>
+                        <td>$cl-red</td>
+                        <td>#e12717</td>
+                        <td style="background:#e12717"></td>
+                      </tr>
+                      <tr>
+                        <td>20</td>
+                        <td>$cl-red-dark</td>
+                        <td>#e72919</td>
+                        <td style="background:#e72919"></td>
+                      </tr>
+                      <tr>
+                        <td>21</td>
+                        <td>$cl-red-dark-1</td>
+                        <td>#d62516</td>
+                        <td style="background:#d62516"></td>
+                      </tr>
+                      <tr>
+                        <td>22</td>
+                        <td>$cl-red-dark-2</td>
+                        <td>#b51f13</td>
+                        <td style="background:#b51f13"></td>
+                      </tr>
+                      <tr>
+                        <td>23</td>
+                        <td>$cl-red-dark-3</td>
+                        <td>#e82e1e</td>
+                        <td style="background:#e82e1e"></td>
+                      </tr>
+                      <tr>
+                        <td>24</td>
+                        <td>$cl-red-dark-4</td>
+                        <td>#eb5e4c</td>
+                        <td style="background:#eb5e4c"></td>
+                      </tr>
+                      <tr>
+                        <td>25</td>
+                        <td>$cl-yellow-light-2</td>
+                        <td>#e3aa04</td>
+                        <td style="background:#e3aa04"></td>
+                      </tr>
+                      <tr>
+                        <td>26</td>
+                        <td>$cl-yellow-light-1</td>
+                        <td>#fbbf0f</td>
+                        <td style="background:#fbbf0f"></td>
+                      </tr>
+                      <tr>
+                        <td>27</td>
+                        <td>$cl-yellow-light</td>
+                        <td>#fbbc05</td>
+                        <td style="background:#fbbc05"></td>
+                      </tr>
+                      <tr>
+                        <td>28</td>
+                        <td>$cl-yellow</td>
+                        <td>#d6a003</td>
+                        <td style="background:#d6a003"></td>
+                      </tr>
+                      <tr>
+                        <td>29</td>
+                        <td>$cl-yellow-medium</td>
+                        <td>#daa50a</td>
+                        <td style="background:#daa50a"></td>
+                      </tr>
+                      <tr>
+                        <td>30</td>
+                        <td>$cl-yellow-dark</td>
+                        <td>#ca9703</td>
+                        <td style="background:#ca9703"></td>
+                      </tr>
+                      <tr>
+                        <td>31</td>
+                        <td>$cl-yellow-dark-1</td>
+                        <td>#dea604</td>
+                        <td style="background:#dea604"></td>
+                      </tr>
+                      <tr>
+                        <td>32</td>
+                        <td>$cl-yellow-dark-2</td>
+                        <td>#a77d03</td>
+                        <td style="background:#a77d03"></td>
+                      </tr>
+                      <tr>
+                        <td>33</td>
+                        <td>$cl-green-light</td>
+                        <td>#34a853</td>
+                        <td style="background:#34a853"></td>
+                      </tr>
+                      <tr>
+                        <td>34</td>
+                        <td>$cl-green-light-4</td>
+                        <td>#6cd187</td>
+                        <td style="background:#6cd187"></td>
+                      </tr>
+                      <tr>
+                        <td>35</td>
+                        <td>$cl-green-light-3</td>
+                        <td>#52b56d</td>
+                        <td style="background:#52b56d"></td>
+                      </tr>
+                      <tr>
+                        <td>36</td>
+                        <td>$cl-green-light-2</td>
+                        <td>#36b057</td>
+                        <td style="background:#36b057"></td>
+                      </tr>
+                      <tr>
+                        <td>37</td>
+                        <td>$cl-green-light-1</td>
+                        <td>#2d9147</td>
+                        <td style="background:#2d9147"></td>
+                      </tr>
+                      <tr>
+                        <td>38</td>
+                        <td>$cl-green</td>
+                        <td>#2b8b45</td>
+                        <td style="background:#2b8b45"></td>
+                      </tr>
+                      <tr>
+                        <td>39</td>
+                        <td>$cl-green-dark</td>
+                        <td>#288140</td>
+                        <td style="background:#288140"></td>
+                      </tr>
+                      <tr>
+                        <td>40</td>
+                        <td>$cl-green-dark-1</td>
+                        <td>#206632</td>
+                        <td style="background:#206632"></td>
+                      </tr>
+                      <tr>
+                        <td>41</td>
+                        <td>$cl-gray-light-15</td>
+                        <td>#e7e7e7</td>
+                        <td style="background:#e7e7e7"></td>
+                      </tr>
+                      <tr>
+                        <td>42</td>
+                        <td>$cl-gray-light-14</td>
+                        <td>#d9d9d9</td>
+                        <td style="background:#d9d9d9"></td>
+                      </tr>
+                      <tr>
+                        <td>43</td>
+                        <td>$cl-gray-light-13</td>
+                        <td>#c2c2c2</td>
+                        <td style="background:#c2c2c2"></td>
+                      </tr>
+                      <tr>
+                        <td>44</td>
+                        <td>$cl-gray-light-12</td>
+                        <td>#f2f2f2</td>
+                        <td style="background:#f2f2f2"></td>
+                      </tr>
+                      <tr>
+                        <td>45</td>
+                        <td>$cl-gray-light-9</td>
+                        <td>#fafafa</td>
+                        <td style="background:#fafafa"></td>
+                      </tr>
+                      <tr>
+                        <td>46</td>
+                        <td>$cl-gray-light-8</td>
+                        <td>#f5f5f5</td>
+                        <td style="background:#f5f5f5"></td>
+                      </tr>
+                      <tr>
+                        <td>47</td>
+                        <td>$cl-gray-light-7</td>
+                        <td>#e4e4e4</td>
+                        <td style="background:#e4e4e4"></td>
+                      </tr>
+                      <tr>
+                        <td>48</td>
+                        <td>$cl-gray-light-6</td>
+                        <td>#ebebeb</td>
+                        <td style="background:#ebebeb"></td>
+                      </tr>
+                      <tr>
+                        <td>49</td>
+                        <td>$cl-gray-light-5</td>
+                        <td>#e0e0e0</td>
+                        <td style="background:#e0e0e0"></td>
+                      </tr>
+                      <tr>
+                        <td>50</td>
+                        <td>$cl-gray-light-4</td>
+                        <td>#e6e6e6</td>
+                        <td style="background:#e6e6e6"></td>
+                      </tr>
+                      <tr>
+                        <td>51</td>
+                        <td>$cl-gray-light-3</td>
+                        <td>#b3b3b3</td>
+                        <td style="background:#b3b3b3"></td>
+                      </tr>
+                      <tr>
+                        <td>52</td>
+                        <td>$cl-gray-light-2</td>
+                        <td>#bdc0c7</td>
+                        <td style="background:#bdc0c7"></td>
+                      </tr>
+                      <tr>
+                        <td>53</td>
+                        <td>$cl-gray-light-1</td>
+                        <td>#d5d8de</td>
+                        <td style="background:#d5d8de"></td>
+                      </tr>
+                      <tr>
+                        <td>54</td>
+                        <td>$cl-gray-light</td>
+                        <td>#dbdbdb</td>
+                        <td style="background:#dbdbdb"></td>
+                      </tr>
+                      <tr>
+                        <td>55</td>
+                        <td>$cl-gray</td>
+                        <td>#eee</td>
+                        <td style="background:#eee"></td>
+                      </tr>
+                      <tr>
+                        <td>56</td>
+                        <td>$cl-gray-medium</td>
+                        <td>#e3e3e3</td>
+                        <td style="background:#e3e3e3"></td>
+                      </tr>
+                      <tr>
+                        <td>57</td>
+                        <td>$cl-gray-medium-1</td>
+                        <td>#c9c9c9</td>
+                        <td style="background:#c9c9c9"></td>
+                      </tr>
+                      <tr>
+                        <td>58</td>
+                        <td>$cl-gray-dark</td>
+                        <td>#bababa</td>
+                        <td style="background:#bababa"></td>
+                      </tr>
+                      <tr>
+                        <td>59</td>
+                        <td>$cl-gray-dark-1</td>
+                        <td>#a1a1a1</td>
+                        <td style="background:#a1a1a1"></td>
+                      </tr>
+                      <tr>
+                        <td>60</td>
+                        <td>$cl-gray-dark-2</td>
+                        <td>#8a8a8a</td>
+                        <td style="background:#8a8a8a"></td>
+                      </tr>
+                      <tr>
+                        <td>61</td>
+                        <td>$cl-gray-dark-3</td>
+                        <td>#ccc</td>
+                        <td style="background:#ccc"></td>
+                      </tr>
+                      <tr>
+                        <td>62</td>
+                        <td>$cl-gray-dark-4</td>
+                        <td>#ededed</td>
+                        <td style="background:#ededed"></td>
+                      </tr>
+                      <tr>
+                        <td>63</td>
+                        <td>$cl-gray-dark-5</td>
+                        <td>#ababab</td>
+                        <td style="background:#ababab"></td>
+                      </tr>
+                      <tr>
+                        <td>64</td>
+                        <td>$cl-gray-dark-6</td>
+                        <td>#c4c4c4</td>
+                        <td style="background:#c4c4c4"></td>
+                      </tr>
+                      <tr>
+                        <td>65</td>
+                        <td>$cl-gray-dark-7</td>
+                        <td>#5e5e5e</td>
+                        <td style="background:#5e5e5e"></td>
+                      </tr>
+                      <tr>
+                        <td>66</td>
+                        <td>$cl-gray-dark-8</td>
+                        <td>#a1a1a1</td>
+                        <td style="background:#a1a1a1"></td>
+                      </tr>
+                      <tr>
+                        <td>67</td>
+                        <td>$cl-gray-dark-9</td>
+                        <td>#a3a3a3</td>
+                        <td style="background:#a3a3a3"></td>
+                      </tr>
+                      <tr>
+                        <td>68</td>
+                        <td>$cl-gray-dark-10</td>
+                        <td>#a6a6a6</td>
+                        <td style="background:#a6a6a6"></td>
+                      </tr>
+                      <tr>
+                        <td>69</td>
+                        <td>$cl-gray-dark-11</td>
+                        <td>#aaa</td>
+                        <td style="background:#aaa"></td>
+                      </tr>
+                      <tr>
+                        <td>70</td>
+                        <td>$cl-gray-dark-12</td>
+                        <td>#d1d1d1</td>
+                        <td style="background:#d1d1d1"></td>
+                      </tr>
+                      <tr>
+                        <td>71</td>
+                        <td>$cl-gray-dark-13</td>
+                        <td>#595858</td>
+                        <td style="background:#595858"></td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" role="tabpanel" id="v-pills-button" aria-labelledby="v-pills-button-tab">
+              <h2 class="demo__title">Basic Button</h2>
+              <div class="row">
+                <div class="col-6 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo text-center">
+                      <button class="btn btn-space btn-secondary btn-xs">Secondary
+                      </button>
+                    </div>
+                    <pre><code>+buttons({
+ type: 'secondary',
+ text: 'Secondary',
+ size: 'xs'
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo text-center">
+                      <button class="btn btn-space btn-secondary btn-sm">Secondary
+                      </button>
+                    </div>
+                    <pre><code>+buttons({
+ type: 'secondary',
+ text: 'Secondary',
+ size: 'sm'
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo text-center">
+                      <button class="btn btn-space btn-secondary btn-md">Secondary
+                      </button>
+                    </div>
+                    <pre><code>+buttons({
+ type: 'secondary',
+ text: 'Secondary',
+ size: 'md'
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo text-center">
+                      <button class="btn btn-space btn-secondary btn-lg">Secondary
+                      </button>
+                    </div>
+                    <pre><code>+buttons({
+ type: 'secondary',
+ text: 'Secondary',
+ size: 'lg'
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo text-center">
+                      <button class="btn btn-space btn-secondary btn-xl">Secondary
+                      </button>
+                    </div>
+                    <pre><code>+buttons({
+ type: 'secondary',
+ text: 'Secondary',
+ size: 'xl'
+})</code></pre>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-6 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo text-center">
+                      <button class="btn btn-space btn-primary btn-xs">Primary
+                      </button>
+                    </div>
+                    <pre><code>+buttons({
+ type: 'primary',
+ text: 'Primary',
+ size: 'xs'
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo text-center">
+                      <button class="btn btn-space btn-primary btn-sm">Primary
+                      </button>
+                    </div>
+                    <pre><code>+buttons({
+ type: 'primary',
+ text: 'Primary',
+ size: 'sm'
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo text-center">
+                      <button class="btn btn-space btn-primary btn-md">Primary
+                      </button>
+                    </div>
+                    <pre><code>+buttons({
+ type: 'primary',
+ text: 'Primary',
+ size: 'md'
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo text-center">
+                      <button class="btn btn-space btn-primary btn-lg">Primary
+                      </button>
+                    </div>
+                    <pre><code>+buttons({
+ type: 'primary',
+ text: 'Primary',
+ size: 'lg'
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo text-center">
+                      <button class="btn btn-space btn-primary btn-xl">Primary
+                      </button>
+                    </div>
+                    <pre><code>+buttons({
+ type: 'primary',
+ text: 'Primary',
+ size: 'xl'
+})</code></pre>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-6 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo text-center">
+                      <button class="btn btn-space btn-danger btn-xs">Danger
+                      </button>
+                    </div>
+                    <pre><code>+buttons({
+ type: 'danger',
+ text: 'Danger',
+ size: 'xs'
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo text-center">
+                      <button class="btn btn-space btn-danger btn-sm">Danger
+                      </button>
+                    </div>
+                    <pre><code>+buttons({
+ type: 'danger',
+ text: 'Danger',
+ size: 'sm'
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo text-center">
+                      <button class="btn btn-space btn-danger btn-md">Danger
+                      </button>
+                    </div>
+                    <pre><code>+buttons({
+ type: 'danger',
+ text: 'Danger',
+ size: 'md'
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo text-center">
+                      <button class="btn btn-space btn-danger btn-lg">Danger
+                      </button>
+                    </div>
+                    <pre><code>+buttons({
+ type: 'danger',
+ text: 'Danger',
+ size: 'lg'
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo text-center">
+                      <button class="btn btn-space btn-danger btn-xl">Danger
+                      </button>
+                    </div>
+                    <pre><code>+buttons({
+ type: 'danger',
+ text: 'Danger',
+ size: 'xl'
+})</code></pre>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-6 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo text-center">
+                      <button class="btn btn-space btn-warning btn-xs">Warning
+                      </button>
+                    </div>
+                    <pre><code>+buttons({
+ type: 'warning',
+ text: 'Warning',
+ size: 'xs'
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo text-center">
+                      <button class="btn btn-space btn-warning btn-sm">Warning
+                      </button>
+                    </div>
+                    <pre><code>+buttons({
+ type: 'warning',
+ text: 'Warning',
+ size: 'sm'
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo text-center">
+                      <button class="btn btn-space btn-warning btn-md">Warning
+                      </button>
+                    </div>
+                    <pre><code>+buttons({
+ type: 'warning',
+ text: 'Warning',
+ size: 'md'
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo text-center">
+                      <button class="btn btn-space btn-warning btn-lg">Warning
+                      </button>
+                    </div>
+                    <pre><code>+buttons({
+ type: 'warning',
+ text: 'Warning',
+ size: 'lg'
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo text-center">
+                      <button class="btn btn-space btn-warning btn-xl">Warning
+                      </button>
+                    </div>
+                    <pre><code>+buttons({
+ type: 'warning',
+ text: 'Warning',
+ size: 'xl'
+})</code></pre>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-6 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo text-center">
+                      <button class="btn btn-space btn-success btn-xs">Success
+                      </button>
+                    </div>
+                    <pre><code>+buttons({
+ type: 'success',
+ text: 'Success',
+ size: 'xs'
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo text-center">
+                      <button class="btn btn-space btn-success btn-sm">Success
+                      </button>
+                    </div>
+                    <pre><code>+buttons({
+ type: 'success',
+ text: 'Success',
+ size: 'sm'
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo text-center">
+                      <button class="btn btn-space btn-success btn-md">Success
+                      </button>
+                    </div>
+                    <pre><code>+buttons({
+ type: 'success',
+ text: 'Success',
+ size: 'md'
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo text-center">
+                      <button class="btn btn-space btn-success btn-lg">Success
+                      </button>
+                    </div>
+                    <pre><code>+buttons({
+ type: 'success',
+ text: 'Success',
+ size: 'lg'
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo text-center">
+                      <button class="btn btn-space btn-success btn-xl">Success
+                      </button>
+                    </div>
+                    <pre><code>+buttons({
+ type: 'success',
+ text: 'Success',
+ size: 'xl'
+})</code></pre>
+                  </div>
+                </div>
+              </div>
+              <h2 class="demo__title">Button with Icon</h2>
+              <div class="row">
+                <div class="col-6 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo text-center">
+                      <button class="btn btn-space btn-secondary btn-xs"><i class="icon icon-left zmdi zmdi-globe"></i>Secondary
+                      </button>
+                    </div>
+                    <pre><code>+buttons({
+ type: 'secondary',
+ text: 'Secondary',
+ size: 'xs',
+ iconBefore: 'zmdi zmdi-globe'
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo text-center">
+                      <button class="btn btn-space btn-secondary btn-sm"><i class="icon icon-left zmdi zmdi-globe"></i>Secondary
+                      </button>
+                    </div>
+                    <pre><code>+buttons({
+ type: 'secondary',
+ text: 'Secondary',
+ size: 'sm',
+ iconBefore: 'zmdi zmdi-globe'
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo text-center">
+                      <button class="btn btn-space btn-secondary btn-md"><i class="icon icon-left zmdi zmdi-globe"></i>Secondary
+                      </button>
+                    </div>
+                    <pre><code>+buttons({
+ type: 'secondary',
+ text: 'Secondary',
+ size: 'md',
+ iconBefore: 'zmdi zmdi-globe'
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo text-center">
+                      <button class="btn btn-space btn-secondary btn-lg"><i class="icon icon-left zmdi zmdi-globe"></i>Secondary
+                      </button>
+                    </div>
+                    <pre><code>+buttons({
+ type: 'secondary',
+ text: 'Secondary',
+ size: 'lg',
+ iconBefore: 'zmdi zmdi-globe'
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo text-center">
+                      <button class="btn btn-space btn-secondary btn-xl"><i class="icon icon-left zmdi zmdi-globe"></i>Secondary
+                      </button>
+                    </div>
+                    <pre><code>+buttons({
+ type: 'secondary',
+ text: 'Secondary',
+ size: 'xl',
+ iconBefore: 'zmdi zmdi-globe'
+})</code></pre>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-6 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo text-center">
+                      <button class="btn btn-space btn-primary btn-xs"><i class="icon icon-left zmdi zmdi-cloud-done"></i>Primary
+                      </button>
+                    </div>
+                    <pre><code>+buttons({
+ type: 'primary',
+ text: 'Primary',
+ size: 'xs',
+ iconBefore: 'zmdi zmdi-cloud-done'
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo text-center">
+                      <button class="btn btn-space btn-primary btn-sm"><i class="icon icon-left zmdi zmdi-cloud-done"></i>Primary
+                      </button>
+                    </div>
+                    <pre><code>+buttons({
+ type: 'primary',
+ text: 'Primary',
+ size: 'sm',
+ iconBefore: 'zmdi zmdi-cloud-done'
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo text-center">
+                      <button class="btn btn-space btn-primary btn-md"><i class="icon icon-left zmdi zmdi-cloud-done"></i>Primary
+                      </button>
+                    </div>
+                    <pre><code>+buttons({
+ type: 'primary',
+ text: 'Primary',
+ size: 'md',
+ iconBefore: 'zmdi zmdi-cloud-done'
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo text-center">
+                      <button class="btn btn-space btn-primary btn-lg"><i class="icon icon-left zmdi zmdi-cloud-done"></i>Primary
+                      </button>
+                    </div>
+                    <pre><code>+buttons({
+ type: 'primary',
+ text: 'Primary',
+ size: 'lg',
+ iconBefore: 'zmdi zmdi-cloud-done'
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo text-center">
+                      <button class="btn btn-space btn-primary btn-xl"><i class="icon icon-left zmdi zmdi-cloud-done"></i>Primary
+                      </button>
+                    </div>
+                    <pre><code>+buttons({
+ type: 'primary',
+ text: 'Primary',
+ size: 'xl',
+ iconBefore: 'zmdi zmdi-cloud-done'
+})</code></pre>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-6 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo text-center">
+                      <button class="btn btn-space btn-danger btn-xs"><i class="icon icon-left zmdi zmdi-alert-circle"></i>Danger
+                      </button>
+                    </div>
+                    <pre><code>+buttons({
+ type: 'danger',
+ text: 'Danger',
+ size: 'xs',
+ iconBefore: 'zmdi zmdi-alert-circle'
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo text-center">
+                      <button class="btn btn-space btn-danger btn-sm"><i class="icon icon-left zmdi zmdi-alert-circle"></i>Danger
+                      </button>
+                    </div>
+                    <pre><code>+buttons({
+ type: 'danger',
+ text: 'Danger',
+ size: 'sm',
+ iconBefore: 'zmdi zmdi-alert-circle'
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo text-center">
+                      <button class="btn btn-space btn-danger btn-md"><i class="icon icon-left zmdi zmdi-alert-circle"></i>Danger
+                      </button>
+                    </div>
+                    <pre><code>+buttons({
+ type: 'danger',
+ text: 'Danger',
+ size: 'md',
+ iconBefore: 'zmdi zmdi-alert-circle'
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo text-center">
+                      <button class="btn btn-space btn-danger btn-lg"><i class="icon icon-left zmdi zmdi-alert-circle"></i>Danger
+                      </button>
+                    </div>
+                    <pre><code>+buttons({
+ type: 'danger',
+ text: 'Danger',
+ size: 'lg',
+ iconBefore: 'zmdi zmdi-alert-circle'
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo text-center">
+                      <button class="btn btn-space btn-danger btn-xl"><i class="icon icon-left zmdi zmdi-alert-circle"></i>Danger
+                      </button>
+                    </div>
+                    <pre><code>+buttons({
+ type: 'danger',
+ text: 'Danger',
+ size: 'xl',
+ iconBefore: 'zmdi zmdi-alert-circle'
+})</code></pre>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-6 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo text-center">
+                      <button class="btn btn-space btn-warning btn-xs"><i class="icon icon-left zmdi zmdi-alert-triangle"></i>Warning
+                      </button>
+                    </div>
+                    <pre><code>+buttons({
+ type: 'warning',
+ text: 'Warning',
+ size: 'xs',
+ iconBefore: 'zmdi zmdi-alert-triangle'
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo text-center">
+                      <button class="btn btn-space btn-warning btn-sm"><i class="icon icon-left zmdi zmdi-alert-triangle"></i>Warning
+                      </button>
+                    </div>
+                    <pre><code>+buttons({
+ type: 'warning',
+ text: 'Warning',
+ size: 'sm',
+ iconBefore: 'zmdi zmdi-alert-triangle'
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo text-center">
+                      <button class="btn btn-space btn-warning btn-md"><i class="icon icon-left zmdi zmdi-alert-triangle"></i>Warning
+                      </button>
+                    </div>
+                    <pre><code>+buttons({
+ type: 'warning',
+ text: 'Warning',
+ size: 'md',
+ iconBefore: 'zmdi zmdi-alert-triangle'
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo text-center">
+                      <button class="btn btn-space btn-warning btn-lg"><i class="icon icon-left zmdi zmdi-alert-triangle"></i>Warning
+                      </button>
+                    </div>
+                    <pre><code>+buttons({
+ type: 'warning',
+ text: 'Warning',
+ size: 'lg',
+ iconBefore: 'zmdi zmdi-alert-triangle'
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo text-center">
+                      <button class="btn btn-space btn-warning btn-xl"><i class="icon icon-left zmdi zmdi-alert-triangle"></i>Warning
+                      </button>
+                    </div>
+                    <pre><code>+buttons({
+ type: 'warning',
+ text: 'Warning',
+ size: 'xl',
+ iconBefore: 'zmdi zmdi-alert-triangle'
+})</code></pre>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-6 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo text-center">
+                      <button class="btn btn-space btn-success btn-xs"><i class="icon icon-left zmdi zmdi-check"></i>Success
+                      </button>
+                    </div>
+                    <pre><code>+buttons({
+ type: 'success',
+ text: 'Success',
+ size: 'xs',
+ iconBefore: 'zmdi zmdi-check'
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo text-center">
+                      <button class="btn btn-space btn-success btn-sm"><i class="icon icon-left zmdi zmdi-check"></i>Success
+                      </button>
+                    </div>
+                    <pre><code>+buttons({
+ type: 'success',
+ text: 'Success',
+ size: 'sm',
+ iconBefore: 'zmdi zmdi-check'
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo text-center">
+                      <button class="btn btn-space btn-success btn-md"><i class="icon icon-left zmdi zmdi-check"></i>Success
+                      </button>
+                    </div>
+                    <pre><code>+buttons({
+ type: 'success',
+ text: 'Success',
+ size: 'md',
+ iconBefore: 'zmdi zmdi-check'
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo text-center">
+                      <button class="btn btn-space btn-success btn-lg"><i class="icon icon-left zmdi zmdi-check"></i>Success
+                      </button>
+                    </div>
+                    <pre><code>+buttons({
+ type: 'success',
+ text: 'Success',
+ size: 'lg',
+ iconBefore: 'zmdi zmdi-check'
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo text-center">
+                      <button class="btn btn-space btn-success btn-xl"><i class="icon icon-left zmdi zmdi-check"></i>Success
+                      </button>
+                    </div>
+                    <pre><code>+buttons({
+ type: 'success',
+ text: 'Success',
+ size: 'xl',
+ iconBefore: 'zmdi zmdi-check'
+})</code></pre>
+                  </div>
+                </div>
+              </div>
+              <h2 class="demo__title">Buttons Rounded Standard</h2>
+              <div class="row">
+                <div class="col-6 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo text-center">
+                      <button class="btn btn-space btn-secondary btn-xs btn-rounded">Secondary
+                      </button>
+                    </div>
+                    <pre><code>+buttons({
+ type: 'secondary',
+ text: 'Secondary',
+ size: 'xs',
+ rounded: true
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo text-center">
+                      <button class="btn btn-space btn-secondary btn-sm btn-rounded">Secondary
+                      </button>
+                    </div>
+                    <pre><code>+buttons({
+ type: 'secondary',
+ text: 'Secondary',
+ size: 'sm',
+ rounded: true
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo text-center">
+                      <button class="btn btn-space btn-secondary btn-md btn-rounded">Secondary
+                      </button>
+                    </div>
+                    <pre><code>+buttons({
+ type: 'secondary',
+ text: 'Secondary',
+ size: 'md',
+ rounded: true
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo text-center">
+                      <button class="btn btn-space btn-secondary btn-lg btn-rounded">Secondary
+                      </button>
+                    </div>
+                    <pre><code>+buttons({
+ type: 'secondary',
+ text: 'Secondary',
+ size: 'lg',
+ rounded: true
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo text-center">
+                      <button class="btn btn-space btn-secondary btn-xl btn-rounded">Secondary
+                      </button>
+                    </div>
+                    <pre><code>+buttons({
+ type: 'secondary',
+ text: 'Secondary',
+ size: 'xl',
+ rounded: true
+})</code></pre>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-6 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo text-center">
+                      <button class="btn btn-space btn-primary btn-xs btn-rounded">Primary
+                      </button>
+                    </div>
+                    <pre><code>+buttons({
+ type: 'primary',
+ text: 'Primary',
+ size: 'xs',
+ rounded: true
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo text-center">
+                      <button class="btn btn-space btn-primary btn-sm btn-rounded">Primary
+                      </button>
+                    </div>
+                    <pre><code>+buttons({
+ type: 'primary',
+ text: 'Primary',
+ size: 'sm',
+ rounded: true
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo text-center">
+                      <button class="btn btn-space btn-primary btn-md btn-rounded">Primary
+                      </button>
+                    </div>
+                    <pre><code>+buttons({
+ type: 'primary',
+ text: 'Primary',
+ size: 'md',
+ rounded: true
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo text-center">
+                      <button class="btn btn-space btn-primary btn-lg btn-rounded">Primary
+                      </button>
+                    </div>
+                    <pre><code>+buttons({
+ type: 'primary',
+ text: 'Primary',
+ size: 'lg',
+ rounded: true
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo text-center">
+                      <button class="btn btn-space btn-primary btn-xl btn-rounded">Primary
+                      </button>
+                    </div>
+                    <pre><code>+buttons({
+ type: 'primary',
+ text: 'Primary',
+ size: 'xl',
+ rounded: true
+})</code></pre>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-6 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo text-center">
+                      <button class="btn btn-space btn-danger btn-xs btn-rounded">Danger
+                      </button>
+                    </div>
+                    <pre><code>+buttons({
+ type: 'danger',
+ text: 'Danger',
+ size: 'xs',
+ rounded: true
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo text-center">
+                      <button class="btn btn-space btn-danger btn-sm btn-rounded">Danger
+                      </button>
+                    </div>
+                    <pre><code>+buttons({
+ type: 'danger',
+ text: 'Danger',
+ size: 'sm',
+ rounded: true
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo text-center">
+                      <button class="btn btn-space btn-danger btn-md btn-rounded">Danger
+                      </button>
+                    </div>
+                    <pre><code>+buttons({
+ type: 'danger',
+ text: 'Danger',
+ size: 'md',
+ rounded: true
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo text-center">
+                      <button class="btn btn-space btn-danger btn-lg btn-rounded">Danger
+                      </button>
+                    </div>
+                    <pre><code>+buttons({
+ type: 'danger',
+ text: 'Danger',
+ size: 'lg',
+ rounded: true
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo text-center">
+                      <button class="btn btn-space btn-danger btn-xl btn-rounded">Danger
+                      </button>
+                    </div>
+                    <pre><code>+buttons({
+ type: 'danger',
+ text: 'Danger',
+ size: 'xl',
+ rounded: true
+})</code></pre>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-6 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo text-center">
+                      <button class="btn btn-space btn-warning btn-xs btn-rounded">Warning
+                      </button>
+                    </div>
+                    <pre><code>+buttons({
+ type: 'warning',
+ text: 'Warning',
+ size: 'xs',
+ rounded: true
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo text-center">
+                      <button class="btn btn-space btn-warning btn-sm btn-rounded">Warning
+                      </button>
+                    </div>
+                    <pre><code>+buttons({
+ type: 'warning',
+ text: 'Warning',
+ size: 'sm',
+ rounded: true
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo text-center">
+                      <button class="btn btn-space btn-warning btn-md btn-rounded">Warning
+                      </button>
+                    </div>
+                    <pre><code>+buttons({
+ type: 'warning',
+ text: 'Warning',
+ size: 'md',
+ rounded: true
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo text-center">
+                      <button class="btn btn-space btn-warning btn-lg btn-rounded">Warning
+                      </button>
+                    </div>
+                    <pre><code>+buttons({
+ type: 'warning',
+ text: 'Warning',
+ size: 'lg',
+ rounded: true
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo text-center">
+                      <button class="btn btn-space btn-warning btn-xl btn-rounded">Warning
+                      </button>
+                    </div>
+                    <pre><code>+buttons({
+ type: 'warning',
+ text: 'Warning',
+ size: 'xl',
+ rounded: true
+})</code></pre>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-6 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo text-center">
+                      <button class="btn btn-space btn-success btn-xs btn-rounded">Success
+                      </button>
+                    </div>
+                    <pre><code>+buttons({
+ type: 'success',
+ text: 'Success',
+ size: 'xs',
+ rounded: true
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo text-center">
+                      <button class="btn btn-space btn-success btn-sm btn-rounded">Success
+                      </button>
+                    </div>
+                    <pre><code>+buttons({
+ type: 'success',
+ text: 'Success',
+ size: 'sm',
+ rounded: true
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo text-center">
+                      <button class="btn btn-space btn-success btn-md btn-rounded">Success
+                      </button>
+                    </div>
+                    <pre><code>+buttons({
+ type: 'success',
+ text: 'Success',
+ size: 'md',
+ rounded: true
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo text-center">
+                      <button class="btn btn-space btn-success btn-lg btn-rounded">Success
+                      </button>
+                    </div>
+                    <pre><code>+buttons({
+ type: 'success',
+ text: 'Success',
+ size: 'lg',
+ rounded: true
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo text-center">
+                      <button class="btn btn-space btn-success btn-xl btn-rounded">Success
+                      </button>
+                    </div>
+                    <pre><code>+buttons({
+ type: 'success',
+ text: 'Success',
+ size: 'xl',
+ rounded: true
+})</code></pre>
+                  </div>
+                </div>
+              </div>
+              <h2 class="demo__title">Buttons Rounded with Icon</h2>
+              <div class="row">
+                <div class="col-6 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo text-center">
+                      <button class="btn btn-space btn-secondary btn-xs btn-rounded"><i class="icon icon-left zmdi zmdi-globe"></i>Secondary
+                      </button>
+                    </div>
+                    <pre><code>+buttons({
+ type: 'secondary',
+ text: 'Secondary',
+ size: 'xs',
+ iconBefore: 'zmdi zmdi-globe', 
+ rounded: true
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo text-center">
+                      <button class="btn btn-space btn-secondary btn-sm btn-rounded"><i class="icon icon-left zmdi zmdi-globe"></i>Secondary
+                      </button>
+                    </div>
+                    <pre><code>+buttons({
+ type: 'secondary',
+ text: 'Secondary',
+ size: 'sm',
+ iconBefore: 'zmdi zmdi-globe', 
+ rounded: true
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo text-center">
+                      <button class="btn btn-space btn-secondary btn-md btn-rounded"><i class="icon icon-left zmdi zmdi-globe"></i>Secondary
+                      </button>
+                    </div>
+                    <pre><code>+buttons({
+ type: 'secondary',
+ text: 'Secondary',
+ size: 'md',
+ iconBefore: 'zmdi zmdi-globe', 
+ rounded: true
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo text-center">
+                      <button class="btn btn-space btn-secondary btn-lg btn-rounded"><i class="icon icon-left zmdi zmdi-globe"></i>Secondary
+                      </button>
+                    </div>
+                    <pre><code>+buttons({
+ type: 'secondary',
+ text: 'Secondary',
+ size: 'lg',
+ iconBefore: 'zmdi zmdi-globe', 
+ rounded: true
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo text-center">
+                      <button class="btn btn-space btn-secondary btn-xl btn-rounded"><i class="icon icon-left zmdi zmdi-globe"></i>Secondary
+                      </button>
+                    </div>
+                    <pre><code>+buttons({
+ type: 'secondary',
+ text: 'Secondary',
+ size: 'xl',
+ iconBefore: 'zmdi zmdi-globe', 
+ rounded: true
+})</code></pre>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-6 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo text-center">
+                      <button class="btn btn-space btn-primary btn-xs btn-rounded"><i class="icon icon-left zmdi zmdi-cloud-done"></i>Primary
+                      </button>
+                    </div>
+                    <pre><code>+buttons({
+ type: 'primary',
+ text: 'Primary',
+ size: 'xs',
+ iconBefore: 'zmdi zmdi-cloud-done', 
+ rounded: true
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo text-center">
+                      <button class="btn btn-space btn-primary btn-sm btn-rounded"><i class="icon icon-left zmdi zmdi-cloud-done"></i>Primary
+                      </button>
+                    </div>
+                    <pre><code>+buttons({
+ type: 'primary',
+ text: 'Primary',
+ size: 'sm',
+ iconBefore: 'zmdi zmdi-cloud-done', 
+ rounded: true
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo text-center">
+                      <button class="btn btn-space btn-primary btn-md btn-rounded"><i class="icon icon-left zmdi zmdi-cloud-done"></i>Primary
+                      </button>
+                    </div>
+                    <pre><code>+buttons({
+ type: 'primary',
+ text: 'Primary',
+ size: 'md',
+ iconBefore: 'zmdi zmdi-cloud-done', 
+ rounded: true
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo text-center">
+                      <button class="btn btn-space btn-primary btn-lg btn-rounded"><i class="icon icon-left zmdi zmdi-cloud-done"></i>Primary
+                      </button>
+                    </div>
+                    <pre><code>+buttons({
+ type: 'primary',
+ text: 'Primary',
+ size: 'lg',
+ iconBefore: 'zmdi zmdi-cloud-done', 
+ rounded: true
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo text-center">
+                      <button class="btn btn-space btn-primary btn-xl btn-rounded"><i class="icon icon-left zmdi zmdi-cloud-done"></i>Primary
+                      </button>
+                    </div>
+                    <pre><code>+buttons({
+ type: 'primary',
+ text: 'Primary',
+ size: 'xl',
+ iconBefore: 'zmdi zmdi-cloud-done', 
+ rounded: true
+})</code></pre>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-6 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo text-center">
+                      <button class="btn btn-space btn-danger btn-xs btn-rounded"><i class="icon icon-left zmdi zmdi-alert-circle"></i>Danger
+                      </button>
+                    </div>
+                    <pre><code>+buttons({
+ type: 'danger',
+ text: 'Danger',
+ size: 'xs',
+ iconBefore: 'zmdi zmdi-alert-circle', 
+ rounded: true
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo text-center">
+                      <button class="btn btn-space btn-danger btn-sm btn-rounded"><i class="icon icon-left zmdi zmdi-alert-circle"></i>Danger
+                      </button>
+                    </div>
+                    <pre><code>+buttons({
+ type: 'danger',
+ text: 'Danger',
+ size: 'sm',
+ iconBefore: 'zmdi zmdi-alert-circle', 
+ rounded: true
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo text-center">
+                      <button class="btn btn-space btn-danger btn-md btn-rounded"><i class="icon icon-left zmdi zmdi-alert-circle"></i>Danger
+                      </button>
+                    </div>
+                    <pre><code>+buttons({
+ type: 'danger',
+ text: 'Danger',
+ size: 'md',
+ iconBefore: 'zmdi zmdi-alert-circle', 
+ rounded: true
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo text-center">
+                      <button class="btn btn-space btn-danger btn-lg btn-rounded"><i class="icon icon-left zmdi zmdi-alert-circle"></i>Danger
+                      </button>
+                    </div>
+                    <pre><code>+buttons({
+ type: 'danger',
+ text: 'Danger',
+ size: 'lg',
+ iconBefore: 'zmdi zmdi-alert-circle', 
+ rounded: true
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo text-center">
+                      <button class="btn btn-space btn-danger btn-xl btn-rounded"><i class="icon icon-left zmdi zmdi-alert-circle"></i>Danger
+                      </button>
+                    </div>
+                    <pre><code>+buttons({
+ type: 'danger',
+ text: 'Danger',
+ size: 'xl',
+ iconBefore: 'zmdi zmdi-alert-circle', 
+ rounded: true
+})</code></pre>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-6 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo text-center">
+                      <button class="btn btn-space btn-warning btn-xs btn-rounded"><i class="icon icon-left zmdi zmdi-alert-triangle"></i>Warning
+                      </button>
+                    </div>
+                    <pre><code>+buttons({
+ type: 'warning',
+ text: 'Warning',
+ size: 'xs',
+ iconBefore: 'zmdi zmdi-alert-triangle', 
+ rounded: true
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo text-center">
+                      <button class="btn btn-space btn-warning btn-sm btn-rounded"><i class="icon icon-left zmdi zmdi-alert-triangle"></i>Warning
+                      </button>
+                    </div>
+                    <pre><code>+buttons({
+ type: 'warning',
+ text: 'Warning',
+ size: 'sm',
+ iconBefore: 'zmdi zmdi-alert-triangle', 
+ rounded: true
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo text-center">
+                      <button class="btn btn-space btn-warning btn-md btn-rounded"><i class="icon icon-left zmdi zmdi-alert-triangle"></i>Warning
+                      </button>
+                    </div>
+                    <pre><code>+buttons({
+ type: 'warning',
+ text: 'Warning',
+ size: 'md',
+ iconBefore: 'zmdi zmdi-alert-triangle', 
+ rounded: true
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo text-center">
+                      <button class="btn btn-space btn-warning btn-lg btn-rounded"><i class="icon icon-left zmdi zmdi-alert-triangle"></i>Warning
+                      </button>
+                    </div>
+                    <pre><code>+buttons({
+ type: 'warning',
+ text: 'Warning',
+ size: 'lg',
+ iconBefore: 'zmdi zmdi-alert-triangle', 
+ rounded: true
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo text-center">
+                      <button class="btn btn-space btn-warning btn-xl btn-rounded"><i class="icon icon-left zmdi zmdi-alert-triangle"></i>Warning
+                      </button>
+                    </div>
+                    <pre><code>+buttons({
+ type: 'warning',
+ text: 'Warning',
+ size: 'xl',
+ iconBefore: 'zmdi zmdi-alert-triangle', 
+ rounded: true
+})</code></pre>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-6 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo text-center">
+                      <button class="btn btn-space btn-success btn-xs btn-rounded"><i class="icon icon-left zmdi zmdi-check"></i>Success
+                      </button>
+                    </div>
+                    <pre><code>+buttons({
+ type: 'success',
+ text: 'Success',
+ size: 'xs',
+ iconBefore: 'zmdi zmdi-check', 
+ rounded: true
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo text-center">
+                      <button class="btn btn-space btn-success btn-sm btn-rounded"><i class="icon icon-left zmdi zmdi-check"></i>Success
+                      </button>
+                    </div>
+                    <pre><code>+buttons({
+ type: 'success',
+ text: 'Success',
+ size: 'sm',
+ iconBefore: 'zmdi zmdi-check', 
+ rounded: true
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo text-center">
+                      <button class="btn btn-space btn-success btn-md btn-rounded"><i class="icon icon-left zmdi zmdi-check"></i>Success
+                      </button>
+                    </div>
+                    <pre><code>+buttons({
+ type: 'success',
+ text: 'Success',
+ size: 'md',
+ iconBefore: 'zmdi zmdi-check', 
+ rounded: true
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo text-center">
+                      <button class="btn btn-space btn-success btn-lg btn-rounded"><i class="icon icon-left zmdi zmdi-check"></i>Success
+                      </button>
+                    </div>
+                    <pre><code>+buttons({
+ type: 'success',
+ text: 'Success',
+ size: 'lg',
+ iconBefore: 'zmdi zmdi-check', 
+ rounded: true
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4">
+                  <div class="code-example">
+                    <div class="demo text-center">
+                      <button class="btn btn-space btn-success btn-xl btn-rounded"><i class="icon icon-left zmdi zmdi-check"></i>Success
+                      </button>
+                    </div>
+                    <pre><code>+buttons({
+ type: 'success',
+ text: 'Success',
+ size: 'xl',
+ iconBefore: 'zmdi zmdi-check', 
+ rounded: true
+})</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" role="tabpanel" id="v-pills-input" aria-labelledby="v-pills-input-tab">
+              <div class="row">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                  <div class="code-example">
+                    <h4 class="h4">Input text</h4>
+                    <div class="demo">
+                      <input class="form__control" type="email" placeholder="Enter email" id="inputEmail" />
+                    </div>
+                    <pre><code>+input-field({
+ id: 'inputEmail',
+ type: 'email',
+ placeholder: 'Enter email'
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                  <div class="code-example">
+                    <h4 class="h4">Input password</h4>
+                    <div class="demo">
+                      <input class="form__control" type="password" placeholder="Password" id="inputPassword" />
+                    </div>
+                    <pre><code>+input-field({
+ id: 'inputPassword',
+ type: 'password',
+ placeholder: 'Password'
+})</code></pre>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                  <div class="code-example">
+                    <h4 class="h4">Placeholder Input</h4>
+                    <div class="demo">
+                      <input class="form__control" type="text" placeholder="Placeholder text" id="inputPlaceholder3" />
+                    </div>
+                    <pre><code>+input-field({
+ id: 'inputPlaceholder3',
+ placeholder: 'Placeholder text'
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                  <div class="code-example">
+                    <h4 class="h4">Disabled Input</h4>
+                    <div class="demo">
+                      <input class="form__control" type="text" placeholder="Disabled input text" disabled="disabled" id="inputDisabled3" />
+                    </div>
+                    <pre><code>+input-field({
+ id: 'inputDisabled3',
+ placeholder: 'Disabled input text',
+ disabled: true
+})</code></pre>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                  <div class="code-example">
+                    <h4 class="h4">Readonly Input</h4>
+                    <div class="demo">
+                      <input class="form__control" type="text" placeholder="Readonly input text" readonly="readonly" id="inputReadonly3" />
+                    </div>
+                    <pre><code>+input-field({
+ id: 'inputReadonly3',
+ placeholder: 'Readonly input text',
+ readonly: true
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                  <div class="code-example">
+                    <h4 class="h4">Input Choose File</h4>
+                    <div class="demo">
+                      <div class="file-custom">
+                        <input class="file-input js-file" type="file" id="inputGroupFile01" />
+                        <label class="file-label" for="inputGroupFile01">Choose file</label>
+                      </div>
+                    </div>
+                    <pre><code>.file-custom
+  +input-field({
+    id: 'inputGroupFile01',
+    type: 'file',
+    label: 'Choose file'
+  })</code></pre>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                  <div class="code-example">
+                    <h4 class="h4">Button multi file input</h4>
+                    <div class="demo">
+                      <input class="file-input js-file multi-file js-multi-file" type="file" id="file-2" multiple="multiple" />
+                      <label class="btn-secondary" for="file-2"><i class="zmdi zmdi-upload"></i><span>Browse files...</span></label>
+                    </div>
+                    <pre><code>+input-field({
+ id: 'file-2',
+ type: 'file',
+ multiple: true,
+ text: "Browse files...",
+ labelType: 'secondary'
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                  <div class="code-example">
+                    <h4 class="h4">Custom button multi file input</h4>
+                    <div class="demo">
+                      <input class="file-input js-file multi-file js-multi-file" type="file" id="file-3" multiple="multiple" />
+                      <label class="btn-primary" for="file-3"><i class="zmdi zmdi-upload"></i><span>Browse files...</span></label>
+                    </div>
+                    <pre><code>+input-field({
+ id: 'file-3',
+ type: 'file',
+ multiple: true,
+ text: "Browse files...",
+ labelType: 'primary'
+})</code></pre>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                  <div class="code-example">
+                    <h4 class="h4">Large input</h4>
+                    <div class="demo">
+                      <input class="form__control form__control--lg" type="text" value="Large input" id="inputLarge" />
+                    </div>
+                    <pre><code>+input-field({
+   id: 'inputLarge',
+   value: 'Large input',
+   sizing: 'lg'
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                  <div class="code-example">
+                    <h4 class="h4">Default input</h4>
+                    <div class="demo">
+                      <input class="form__control form__control--md" type="text" value="Default input" id="inputDefault" />
+                    </div>
+                    <pre><code>+input-field({
+   id: 'inputDefault',
+   value: 'Default input',
+   sizing: 'md'
+})</code></pre>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                  <div class="code-example">
+                    <h4 class="h4">Small input</h4>
+                    <div class="demo">
+                      <input class="form__control form__control--sm" type="text" value="Small input" id="inputSmall" />
+                    </div>
+                    <pre><code>+input-field({
+   id: 'inputSmall',
+   value: 'Small input',
+   sizing: 'sm'
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                  <div class="code-example">
+                    <h4 class="h4">Extra Small input</h4>
+                    <div class="demo">
+                      <input class="form__control form__control--xs" type="text" value="Extra Small input" id="inputExtraSmall" />
+                    </div>
+                    <pre><code>+input-field({
+   id: 'inputExtraSmall',
+   value: 'Extra Small input',
+   sizing: 'xs'
+})</code></pre>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                  <div class="code-example">
+                    <h4 class="h4">Success</h4>
+                    <div class="demo">
+                      <input class="form__control is--valid" type="text" required="required" />
+                    </div>
+                    <pre><code>+input-field({
+   valid: true,
+   required: true
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                  <div class="code-example">
+                    <h4 class="h4">Error</h4>
+                    <div class="demo">
+                      <input class="form__control is--invalid" type="text" required="required" />
+                    </div>
+                    <pre><code>+input-field({
+   valid: false,
+   required: true
+})</code></pre>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <div class="code-example">
+                    <h4 class="h4">Textarea</h4>
+                    <div class="demo">
+                      <textarea class="text-field" id="inputTextarea"></textarea>
+                    </div>
+                    <pre><code>+textarea('inputTextarea')</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" role="tabpanel" id="v-pills-checkbox" aria-labelledby="v-pills-checkbox-tab">
+              <div class="row">
+                <div class="col-12 col-sm-12 col-md-6">
+                  <div class="code-example">
+                    <h4 class="h4">Basic Checkbox</h4>
+                    <div class="demo">
+                      <div class="custom-control-checkbox">
+                        <input class="custom-checkbox-input" type="checkbox" id="check1" checked="checked" />
+                        <label class="custom-checkbox-label" for="check1">Option 1</label>
+                      </div>
+                      <div class="custom-control-checkbox">
+                        <input class="custom-checkbox-input" type="checkbox" id="check2" />
+                        <label class="custom-checkbox-label" for="check2">Option 2</label>
+                      </div>
+                      <div class="custom-control-checkbox">
+                        <input class="custom-checkbox-input" type="checkbox" id="check3" />
+                        <label class="custom-checkbox-label" for="check3">Option 3</label>
+                      </div>
+                      <div class="custom-control-checkbox">
+                        <input class="custom-checkbox-input" type="checkbox" id="check4" disabled="disabled" />
+                        <label class="custom-checkbox-label" for="check4">Option 4</label>
+                      </div>
+                      <div class="custom-control-checkbox">
+                        <input class="custom-checkbox-input custom-checkbox-input--line-through" type="checkbox" id="check21" />
+                        <label class="custom-checkbox-label" for="check21">Option 5</label>
+                      </div>
+                    </div>
+                    <pre><code>+checkboxes({
+ id: 'check1',
+ checked: true,
+ label: 'Option 1'
+})
++checkboxes({
+ id: 'check2',
+ checked: false,
+ label: 'Option 2'
+})
++checkboxes({
+ id: 'check3',
+ checked: false,
+ label: 'Option 3'
+})
++checkboxes({
+ id: 'check4',
+ checked: false,
+ label: 'Option 4',
+ disabled: true
+})
++checkboxes({
+ id: 'check21',
+ checked: false,
+ label: 'Option 5',
+ lineThrough: true
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6">
+                  <div class="code-example">
+                    <h4 class="h4">Inline Checkbox</h4>
+                    <div class="demo">
+                      <div class="custom-control-checkbox custom-control-checkbox--inline">
+                        <input class="custom-checkbox-input" type="checkbox" id="check5" checked="checked" />
+                        <label class="custom-checkbox-label" for="check5">Option 1</label>
+                      </div>
+                      <div class="custom-control-checkbox custom-control-checkbox--inline">
+                        <input class="custom-checkbox-input" type="checkbox" id="check6" />
+                        <label class="custom-checkbox-label" for="check6">Option 2</label>
+                      </div>
+                      <div class="custom-control-checkbox custom-control-checkbox--inline">
+                        <input class="custom-checkbox-input" type="checkbox" id="check7" />
+                        <label class="custom-checkbox-label" for="check7">Option 3</label>
+                      </div>
+                      <div class="custom-control-checkbox custom-control-checkbox--inline">
+                        <input class="custom-checkbox-input" type="checkbox" id="check8" disabled="disabled" />
+                        <label class="custom-checkbox-label" for="check8">Option 4</label>
+                      </div>
+                    </div>
+                    <pre><code>+checkboxes({
+ id: 'check5',
+ checked: true,
+ label: 'Option 1'
+})(class="custom-control-checkbox--inline")
++checkboxes({
+ id: 'check6',
+ checked: false,
+ label: 'Option 2'
+})(class="custom-control-checkbox--inline")
++checkboxes({
+ id: 'check7',
+ checked: false,
+ label: 'Option 3'
+})(class="custom-control-checkbox--inline")
++checkboxes({
+ id: 'check8',
+ checked: false,
+ label: 'Option 4',
+ disabled: true
+})(class="custom-control-checkbox--inline")</code></pre>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 col-sm-12 col-md-6">
+                  <div class="code-example">
+                    <h4 class="h4">Checkbox full color</h4>
+                    <div class="demo">
+                      <div class="custom-control-checkbox custom-control-checkbox--color custom-control-checkbox--inline">
+                        <input class="custom-checkbox-input" type="checkbox" id="check9" checked="checked" />
+                        <label class="custom-checkbox-label" for="check9">Option 1</label>
+                      </div>
+                      <div class="custom-control-checkbox custom-control-checkbox--color custom-control-checkbox--inline">
+                        <input class="custom-checkbox-input" type="checkbox" id="check10" />
+                        <label class="custom-checkbox-label" for="check10">Option 2</label>
+                      </div>
+                      <div class="custom-control-checkbox custom-control-checkbox--color custom-control-checkbox--inline">
+                        <input class="custom-checkbox-input" type="checkbox" id="check11" />
+                        <label class="custom-checkbox-label" for="check11">Option 3</label>
+                      </div>
+                      <div class="custom-control-checkbox custom-control-checkbox--color custom-control-checkbox--inline">
+                        <input class="custom-checkbox-input" type="checkbox" id="check12" disabled="disabled" />
+                        <label class="custom-checkbox-label" for="check12">Option 4</label>
+                      </div>
+                    </div>
+                    <pre><code>+checkboxes({
+ id: 'check9',
+ checked: true,
+ label: 'Option 1'
+})(class="custom-control-checkbox--color custom-control-checkbox--inline")
++checkboxes({
+ id: 'check10',
+ checked: false,
+ label: 'Option 2'
+})(class="custom-control-checkbox--color custom-control-checkbox--inline")
++checkboxes({
+ id: 'check11',
+ checked: false,
+ label: 'Option 3',
+})(class="custom-control-checkbox--color custom-control-checkbox--inline")
++checkboxes({
+ id: 'check12',
+ checked: false,
+ label: 'Option 4',
+ disabled: true
+})(class="custom-control-checkbox--color custom-control-checkbox--inline")</code></pre>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6">
+                  <div class="code-example">
+                    <h4 class="h4">Checkbox validation</h4>
+                    <div class="demo">
+                      <div class="custom-control-checkbox">
+                        <input class="custom-checkbox-input is--valid" type="checkbox" id="check13" checked="checked" />
+                        <label class="custom-checkbox-label" for="check13">Success</label>
+                      </div>
+                      <div class="custom-control-checkbox">
+                        <input class="custom-checkbox-input is--invalid" type="checkbox" id="check14" />
+                        <label class="custom-checkbox-label" for="check14">Error</label>
+                      </div>
+                      <div class="custom-control-checkbox">
+                        <input class="custom-checkbox-input is--valid" type="checkbox" id="check15" checked="checked" disabled="disabled" />
+                        <label class="custom-checkbox-label" for="check15">Success</label>
+                      </div>
+                      <div class="custom-control-checkbox">
+                        <input class="custom-checkbox-input is--invalid" type="checkbox" id="check16" disabled="disabled" />
+                        <label class="custom-checkbox-label" for="check16">Error</label>
+                      </div>
+                    </div>
+                    <pre><code>+checkboxes({
+ id: 'check13',
+ checked: true,
+ valid: true,
+ label: 'Success'
+})
++checkboxes({
+ id: 'check14',
+ checked: false,
+ valid: false,
+ label: 'Error'
+})
+
++checkboxes({
+ id: 'check15',
+ checked: true,
+ valid: true,
+ label: 'Success',
+ disabled: true
+})
++checkboxes({
+ id: 'check16',
+ checked: false,
+ valid: false,
+ label: 'Error',
+ disabled: true
+})</code></pre>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 col-sm-12 col-md-6">
+                  <div class="code-example">
+                    <h4 class="h4">Checkbox validation full color</h4>
+                    <div class="demo">
+                      <div class="custom-control-checkbox custom-control-checkbox--valid custom-control-checkbox--inline">
+                        <input class="custom-checkbox-input is--valid" type="checkbox" id="check17" checked="checked" />
+                        <label class="custom-checkbox-label" for="check17">Success</label>
+                      </div>
+                      <div class="custom-control-checkbox custom-control-checkbox--invalid custom-control-checkbox--inline">
+                        <input class="custom-checkbox-input is--invalid" type="checkbox" id="check18" />
+                        <label class="custom-checkbox-label" for="check18">Error</label>
+                      </div>
+                      <div class="custom-control-checkbox custom-control-checkbox--valid custom-control-checkbox--inline">
+                        <input class="custom-checkbox-input is--valid" type="checkbox" id="check19" checked="checked" disabled="disabled" />
+                        <label class="custom-checkbox-label" for="check19">Success</label>
+                      </div>
+                      <div class="custom-control-checkbox custom-control-checkbox--invalid custom-control-checkbox--inline">
+                        <input class="custom-checkbox-input is--invalid" type="checkbox" id="check20" disabled="disabled" />
+                        <label class="custom-checkbox-label" for="check20">Error</label>
+                      </div>
+                    </div>
+                    <pre><code>+checkboxes({
+ id: 'check17',
+ checked: true,
+ valid: true,
+ label: 'Success'
+})(class="custom-control-checkbox--valid custom-control-checkbox--inline")
++checkboxes({
+ id: 'check18',
+ checked: false,
+ valid: false,
+ label: 'Error'
+})(class="custom-control-checkbox--invalid custom-control-checkbox--inline")
+
++checkboxes({
+ id: 'check19',
+ checked: true,
+ valid: true,
+ label: 'Success',
+ disabled: true
+})(class="custom-control-checkbox--valid custom-control-checkbox--inline")
++checkboxes({
+ id: 'check20',
+ checked: false,
+ valid: false,
+ label: 'Error',
+ disabled: true
+})(class="custom-control-checkbox--invalid custom-control-checkbox--inline")</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" role="tabpanel" id="v-pills-radio" aria-labelledby="v-pills-radio-tab">
+              <div class="row">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                  <div class="code-example">
+                    <h4 class="h4">Icon Radio</h4>
+                    <div class="demo">
+                      <label class="custom-control-radio custom-control-radio--icon custom-control-radio--inline">
+                        <input class="custom-radio-input" type="radio" id="radio1" checked="checked" name="radio" /><span class="custom-radio-label--icon"><i class="zmdi zmdi-female"></i></span>
+                      </label>
+                      <label class="custom-control-radio custom-control-radio--icon custom-control-radio--inline">
+                        <input class="custom-radio-input" type="radio" id="radio2" name="radio" /><span class="custom-radio-label--icon"><i class="zmdi zmdi-male"></i></span>
+                      </label>
+                      <label class="custom-control-radio custom-control-radio--icon custom-control-radio--inline">
+                        <input class="custom-radio-input" type="radio" id="radio3" checked="checked" disabled="disabled" name="radio1" /><span class="custom-radio-label--icon"><i class="zmdi zmdi-female"></i></span>
+                      </label>
+                      <label class="custom-control-radio custom-control-radio--icon custom-control-radio--inline">
+                        <input class="custom-radio-input" type="radio" id="radio4" disabled="disabled" name="radio1" /><span class="custom-radio-label--icon"><i class="zmdi zmdi-male"></i></span>
+                      </label>
+                    </div>
+                    <pre><code>+radio({
+ id: 'radio1',
+ name: 'radio',
+ checked: true,
+ icon: 'zmdi zmdi-female'
+})(class='custom-control-radio--inline')
++radio({
+ id: 'radio2',
+ name: 'radio',
+ icon: 'zmdi zmdi-male'
+})(class='custom-control-radio--inline')
+
++radio({
+ id: 'radio3',
+ name: 'radio1',
+ checked: true,
+ icon: 'zmdi zmdi-female',
+ disabled: true
+})(class='custom-control-radio--inline')
++radio({
+ id: 'radio4',
+ name: 'radio1',
+ icon: 'zmdi zmdi-male',
+ disabled: true
+})(class='custom-control-radio--inline')</code></pre>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                  <div class="code-example">
+                    <h4 class="h4">Radio</h4>
+                    <div class="demo">
+                      <label class="custom-control-radio">
+                        <input class="custom-radio-input" type="radio" id="radio5" checked="checked" name="radio2" /><span class="custom-radio-label--text">Option 1</span>
+                      </label>
+                      <label class="custom-control-radio">
+                        <input class="custom-radio-input" type="radio" id="radio6" name="radio2" /><span class="custom-radio-label--text">Option 2</span>
+                      </label>
+                      <label class="custom-control-radio">
+                        <input class="custom-radio-input" type="radio" id="radio7" name="radio2" /><span class="custom-radio-label--text">Option 3</span>
+                      </label>
+                      <label class="custom-control-radio">
+                        <input class="custom-radio-input" type="radio" id="radio8" disabled="disabled" name="radio2" /><span class="custom-radio-label--text">Option 4</span>
+                      </label>
+                    </div>
+                    <pre><code>+radio({
+ id: 'radio5',
+ name: 'radio2',
+ label: 'Option 1',
+ checked: true,
+})
++radio({
+ id: 'radio6',
+ name: 'radio2',
+ label: 'Option 2',
+})
++radio({
+ id: 'radio7',
+ name: 'radio2',
+ label: 'Option 3',
+})
++radio({
+ id: 'radio8',
+ name: 'radio2',
+ label: 'Option 4',
+ disabled: true
+})</code></pre>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                  <div class="code-example">
+                    <h4 class="h4">Inline Radio</h4>
+                    <div class="demo">
+                      <label class="custom-control-radio custom-control-radio--inline">
+                        <input class="custom-radio-input" type="radio" id="radio9" checked="checked" name="radio3" /><span class="custom-radio-label--text">Option 1</span>
+                      </label>
+                      <label class="custom-control-radio custom-control-radio--inline">
+                        <input class="custom-radio-input" type="radio" id="radio10" name="radio3" /><span class="custom-radio-label--text">Option 2</span>
+                      </label>
+                      <label class="custom-control-radio custom-control-radio--inline">
+                        <input class="custom-radio-input" type="radio" id="radio11" name="radio3" /><span class="custom-radio-label--text">Option 3</span>
+                      </label>
+                      <label class="custom-control-radio custom-control-radio--inline">
+                        <input class="custom-radio-input" type="radio" id="radio12" disabled="disabled" name="radio3" /><span class="custom-radio-label--text">Option 4</span>
+                      </label>
+                    </div>
+                    <pre><code>+radio({
+ id: 'radio9',
+ name: 'radio3',
+ label: 'Option 1',
+ checked: true,
+})(class='custom-control-radio--inline')
++radio({
+ id: 'radio10',
+ name: 'radio3',
+ label: 'Option 2',
+})(class='custom-control-radio--inline')
++radio({
+ id: 'radio11',
+ name: 'radio3',
+ label: 'Option 3',
+})(class='custom-control-radio--inline')
++radio({
+ id: 'radio12',
+ name: 'radio3',
+ label: 'Option 4',
+ disabled: true
+})(class='custom-control-radio--inline')</code></pre>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                  <div class="code-example">
+                    <h4 class="h4">Inline Radio Full Color</h4>
+                    <div class="demo">
+                      <label class="custom-control-radio custom-control-radio--inline custom-control-radio--color">
+                        <input class="custom-radio-input" type="radio" id="radio13" checked="checked" name="radio4" /><span class="custom-radio-label--text">Option 1</span>
+                      </label>
+                      <label class="custom-control-radio custom-control-radio--inline custom-control-radio--color">
+                        <input class="custom-radio-input" type="radio" id="radio14" name="radio4" /><span class="custom-radio-label--text">Option 2</span>
+                      </label>
+                      <label class="custom-control-radio custom-control-radio--inline custom-control-radio--color">
+                        <input class="custom-radio-input" type="radio" id="radio15" name="radio4" /><span class="custom-radio-label--text">Option 3</span>
+                      </label>
+                      <label class="custom-control-radio custom-control-radio--inline custom-control-radio--color">
+                        <input class="custom-radio-input" type="radio" id="radio16" disabled="disabled" name="radio4" /><span class="custom-radio-label--text">Option 4</span>
+                      </label>
+                    </div>
+                    <pre><code>+radio({
+ id: 'radio13',
+ name: 'radio4',
+ label: 'Option 1',
+ checked: true,
+})(class='custom-control-radio--inline custom-control-radio--color')
++radio({
+ id: 'radio14',
+ name: 'radio4',
+ label: 'Option 2',
+})(class='custom-control-radio--inline custom-control-radio--color')
++radio({
+ id: 'radio15',
+ name: 'radio4',
+ label: 'Option 3',
+})(class='custom-control-radio--inline custom-control-radio--color')
++radio({
+ id: 'radio16',
+ name: 'radio4',
+ label: 'Option 4',
+ disabled: true
+})(class='custom-control-radio--inline custom-control-radio--color')</code></pre>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                  <div class="code-example">
+                    <h4 class="h4">Radio valid</h4>
+                    <div class="demo">
+                      <label class="custom-control-radio">
+                        <input class="custom-radio-input is--valid" type="radio" id="radio17" checked="checked" name="radio5" /><span class="custom-radio-label--text">Success</span>
+                      </label>
+                      <label class="custom-control-radio">
+                        <input class="custom-radio-input is--invalid" type="radio" id="radio18" name="radio5" /><span class="custom-radio-label--text">Error</span>
+                      </label>
+                      <label class="custom-control-radio">
+                        <input class="custom-radio-input is--valid" type="radio" id="radio19" checked="checked" disabled="disabled" name="radio6" /><span class="custom-radio-label--text">Success</span>
+                      </label>
+                      <label class="custom-control-radio">
+                        <input class="custom-radio-input is--invalid" type="radio" id="radio20" disabled="disabled" name="radio6" /><span class="custom-radio-label--text">Error</span>
+                      </label>
+                    </div>
+                    <pre><code>+radio({
+ id: 'radio17',
+ name: 'radio5',
+ label: 'Success',
+ checked: true,
+ valid: true
+})
++radio({
+ id: 'radio18',
+ name: 'radio5',
+ label: 'Error',
+ valid: false
+})
+
++radio({
+ id: 'radio19',
+ name: 'radio6',
+ label: 'Success',
+ checked: true,
+ valid: true,
+ disabled: true
+})
++radio({
+ id: 'radio20',
+ name: 'radio6',
+ label: 'Error',
+ valid: false,
+ disabled: true
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                  <div class="code-example">
+                    <h4 class="h4">Radio valid inline</h4>
+                    <div class="demo">
+                      <label class="custom-control-radio custom-control-radio--inline">
+                        <input class="custom-radio-input is--valid" type="radio" id="radio21" checked="checked" name="radio7" /><span class="custom-radio-label--text">Success</span>
+                      </label>
+                      <label class="custom-control-radio custom-control-radio--inline">
+                        <input class="custom-radio-input is--invalid" type="radio" id="radio22" name="radio7" /><span class="custom-radio-label--text">Error</span>
+                      </label>
+                      <label class="custom-control-radio custom-control-radio--inline">
+                        <input class="custom-radio-input is--valid" type="radio" id="radio23" checked="checked" disabled="disabled" name="radio8" /><span class="custom-radio-label--text">Success</span>
+                      </label>
+                      <label class="custom-control-radio custom-control-radio--inline">
+                        <input class="custom-radio-input is--invalid" type="radio" id="radio24" disabled="disabled" name="radio8" /><span class="custom-radio-label--text">Error</span>
+                      </label>
+                    </div>
+                    <pre><code>+radio({
+ id: 'radio21',
+ name: 'radio7',
+ label: 'Success',
+ checked: true,
+ valid: true
+})(class='custom-control-radio--inline')
++radio({
+ id: 'radio22',
+ name: 'radio7',
+ label: 'Error',
+ valid: false
+})(class='custom-control-radio--inline')
+
++radio({
+ id: 'radio23',
+ name: 'radio8',
+ label: 'Success',
+ checked: true,
+ valid: true,
+ disabled: true
+})(class='custom-control-radio--inline')
++radio({
+ id: 'radio24',
+ name: 'radio8',
+ label: 'Error',
+ valid: false,
+ disabled: true
+})(class='custom-control-radio--inline')</code></pre>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                  <div class="code-example">
+                    <h4 class="h4">Radio valid inline full color</h4>
+                    <div class="demo">
+                      <label class="custom-control-radio custom-control-radio--inline custom-control-radio--color">
+                        <input class="custom-radio-input is--valid" type="radio" id="radioIcon25" checked="checked" name="radio9" /><span class="custom-radio-label--text">Success</span>
+                      </label>
+                      <label class="custom-control-radio custom-control-radio--inline custom-control-radio--color">
+                        <input class="custom-radio-input is--invalid" type="radio" id="radio26" name="radio9" /><span class="custom-radio-label--text">Error</span>
+                      </label>
+                      <label class="custom-control-radio custom-control-radio--inline custom-control-radio--color">
+                        <input class="custom-radio-input is--valid" type="radio" id="radio27" checked="checked" disabled="disabled" name="radio10" /><span class="custom-radio-label--text">Success</span>
+                      </label>
+                      <label class="custom-control-radio custom-control-radio--inline custom-control-radio--color">
+                        <input class="custom-radio-input is--invalid" type="radio" id="radio28" disabled="disabled" name="radio10" /><span class="custom-radio-label--text">Error</span>
+                      </label>
+                    </div>
+                    <pre><code>+radio({
+ id: 'radioIcon25',
+ name: 'radio9',
+ label: 'Success',
+ checked: true,
+ valid: true
+})(class='custom-control-radio--inline custom-control-radio--color')
++radio({
+ id: 'radio26',
+ name: 'radio9',
+ label: 'Error',
+ valid: false
+})(class='custom-control-radio--inline custom-control-radio--color')
+
++radio({
+ id: 'radio27',
+ name: 'radio10',
+ label: 'Success',
+ checked: true,
+ valid: true,
+ disabled: true
+})(class='custom-control-radio--inline custom-control-radio--color')
++radio({
+ id: 'radio28',
+ name: 'radio10',
+ label: 'Error',
+ valid: false,
+ disabled: true
+})(class='custom-control-radio--inline custom-control-radio--color')</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" role="tabpanel" id="v-pills-switch" aria-labelledby="v-pills-switch-tab">
+              <h2 class="h2">Switch button</h2>
+              <div class="row">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                  <div class="code-example">
+                    <div class="demo">
+                      <div class="switch-button switch-button--xs switch-button--primary">
+                        <input class="switch-button-input" type="checkbox" checked="checked" name="swt00" id="swt00" /><span>
+                          <label class="label label--xs" for="swt00"></label></span>
+                      </div>
+                    </div>
+                    <pre><code>+switch({
+ id: 'swt00',
+ name: 'swt00',
+ type: 'primary',
+ size: 'xs',
+ checked: true
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                  <div class="code-example">
+                    <div class="demo">
+                      <div class="switch-button switch-button--sm switch-button--primary">
+                        <input class="switch-button-input" type="checkbox" checked="checked" name="swt01" id="swt01" /><span>
+                          <label class="label label--sm" for="swt01"></label></span>
+                      </div>
+                    </div>
+                    <pre><code>+switch({
+ id: 'swt01',
+ name: 'swt01',
+ type: 'primary',
+ size: 'sm',
+ checked: true
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                  <div class="code-example">
+                    <div class="demo">
+                      <div class="switch-button switch-button--md switch-button--primary">
+                        <input class="switch-button-input" type="checkbox" checked="checked" name="swt02" id="swt02" /><span>
+                          <label class="label label--md" for="swt02"></label></span>
+                      </div>
+                    </div>
+                    <pre><code>+switch({
+ id: 'swt02',
+ name: 'swt02',
+ type: 'primary',
+ size: 'md',
+ checked: true
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                  <div class="code-example">
+                    <div class="demo">
+                      <div class="switch-button switch-button--lg switch-button--primary">
+                        <input class="switch-button-input" type="checkbox" checked="checked" name="swt03" id="swt03" /><span>
+                          <label class="label label--lg" for="swt03"></label></span>
+                      </div>
+                    </div>
+                    <pre><code>+switch({
+ id: 'swt03',
+ name: 'swt03',
+ type: 'primary',
+ size: 'lg',
+ checked: true
+})</code></pre>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                  <div class="code-example">
+                    <div class="demo">
+                      <div class="switch-button switch-button--xs switch-button--success">
+                        <input class="switch-button-input" type="checkbox" checked="checked" name="swt10" id="swt10" /><span>
+                          <label class="label label--xs" for="swt10"></label></span>
+                      </div>
+                    </div>
+                    <pre><code>+switch({
+ id: 'swt10',
+ name: 'swt10',
+ type: 'success',
+ size: 'xs',
+ checked: true
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                  <div class="code-example">
+                    <div class="demo">
+                      <div class="switch-button switch-button--sm switch-button--success">
+                        <input class="switch-button-input" type="checkbox" checked="checked" name="swt11" id="swt11" /><span>
+                          <label class="label label--sm" for="swt11"></label></span>
+                      </div>
+                    </div>
+                    <pre><code>+switch({
+ id: 'swt11',
+ name: 'swt11',
+ type: 'success',
+ size: 'sm',
+ checked: true
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                  <div class="code-example">
+                    <div class="demo">
+                      <div class="switch-button switch-button--md switch-button--success">
+                        <input class="switch-button-input" type="checkbox" checked="checked" name="swt12" id="swt12" /><span>
+                          <label class="label label--md" for="swt12"></label></span>
+                      </div>
+                    </div>
+                    <pre><code>+switch({
+ id: 'swt12',
+ name: 'swt12',
+ type: 'success',
+ size: 'md',
+ checked: true
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                  <div class="code-example">
+                    <div class="demo">
+                      <div class="switch-button switch-button--lg switch-button--success">
+                        <input class="switch-button-input" type="checkbox" checked="checked" name="swt13" id="swt13" /><span>
+                          <label class="label label--lg" for="swt13"></label></span>
+                      </div>
+                    </div>
+                    <pre><code>+switch({
+ id: 'swt13',
+ name: 'swt13',
+ type: 'success',
+ size: 'lg',
+ checked: true
+})</code></pre>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                  <div class="code-example">
+                    <div class="demo">
+                      <div class="switch-button switch-button--xs switch-button--warning">
+                        <input class="switch-button-input" type="checkbox" checked="checked" name="swt20" id="swt20" /><span>
+                          <label class="label label--xs" for="swt20"></label></span>
+                      </div>
+                    </div>
+                    <pre><code>+switch({
+ id: 'swt20',
+ name: 'swt20',
+ type: 'warning',
+ size: 'xs',
+ checked: true
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                  <div class="code-example">
+                    <div class="demo">
+                      <div class="switch-button switch-button--sm switch-button--warning">
+                        <input class="switch-button-input" type="checkbox" checked="checked" name="swt21" id="swt21" /><span>
+                          <label class="label label--sm" for="swt21"></label></span>
+                      </div>
+                    </div>
+                    <pre><code>+switch({
+ id: 'swt21',
+ name: 'swt21',
+ type: 'warning',
+ size: 'sm',
+ checked: true
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                  <div class="code-example">
+                    <div class="demo">
+                      <div class="switch-button switch-button--md switch-button--warning">
+                        <input class="switch-button-input" type="checkbox" checked="checked" name="swt22" id="swt22" /><span>
+                          <label class="label label--md" for="swt22"></label></span>
+                      </div>
+                    </div>
+                    <pre><code>+switch({
+ id: 'swt22',
+ name: 'swt22',
+ type: 'warning',
+ size: 'md',
+ checked: true
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                  <div class="code-example">
+                    <div class="demo">
+                      <div class="switch-button switch-button--lg switch-button--warning">
+                        <input class="switch-button-input" type="checkbox" checked="checked" name="swt23" id="swt23" /><span>
+                          <label class="label label--lg" for="swt23"></label></span>
+                      </div>
+                    </div>
+                    <pre><code>+switch({
+ id: 'swt23',
+ name: 'swt23',
+ type: 'warning',
+ size: 'lg',
+ checked: true
+})</code></pre>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                  <div class="code-example">
+                    <div class="demo">
+                      <div class="switch-button switch-button--xs switch-button--danger">
+                        <input class="switch-button-input" type="checkbox" checked="checked" name="swt30" id="swt30" /><span>
+                          <label class="label label--xs" for="swt30"></label></span>
+                      </div>
+                    </div>
+                    <pre><code>+switch({
+ id: 'swt30',
+ name: 'swt30',
+ type: 'danger',
+ size: 'xs',
+ checked: true
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                  <div class="code-example">
+                    <div class="demo">
+                      <div class="switch-button switch-button--sm switch-button--danger">
+                        <input class="switch-button-input" type="checkbox" checked="checked" name="swt31" id="swt31" /><span>
+                          <label class="label label--sm" for="swt31"></label></span>
+                      </div>
+                    </div>
+                    <pre><code>+switch({
+ id: 'swt31',
+ name: 'swt31',
+ type: 'danger',
+ size: 'sm',
+ checked: true
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                  <div class="code-example">
+                    <div class="demo">
+                      <div class="switch-button switch-button--md switch-button--danger">
+                        <input class="switch-button-input" type="checkbox" checked="checked" name="swt32" id="swt32" /><span>
+                          <label class="label label--md" for="swt32"></label></span>
+                      </div>
+                    </div>
+                    <pre><code>+switch({
+ id: 'swt32',
+ name: 'swt32',
+ type: 'danger',
+ size: 'md',
+ checked: true
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                  <div class="code-example">
+                    <div class="demo">
+                      <div class="switch-button switch-button--lg switch-button--danger">
+                        <input class="switch-button-input" type="checkbox" checked="checked" name="swt33" id="swt33" /><span>
+                          <label class="label label--lg" for="swt33"></label></span>
+                      </div>
+                    </div>
+                    <pre><code>+switch({
+ id: 'swt33',
+ name: 'swt33',
+ type: 'danger',
+ size: 'lg',
+ checked: true
+})</code></pre>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                  <div class="code-example">
+                    <div class="demo">
+                      <div class="switch-button switch-button--xs switch-button--yesno">
+                        <input class="switch-button-input" type="checkbox" checked="checked" name="swt40" id="swt40" /><span>
+                          <label class="label label--xs" for="swt40"></label></span>
+                      </div>
+                    </div>
+                    <pre><code>+switch({
+ id: 'swt40',
+ name: 'swt40',
+ type: 'yesno',
+ size: 'xs',
+ checked: true
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                  <div class="code-example">
+                    <div class="demo">
+                      <div class="switch-button switch-button--sm switch-button--yesno">
+                        <input class="switch-button-input" type="checkbox" checked="checked" name="swt41" id="swt41" /><span>
+                          <label class="label label--sm" for="swt41"></label></span>
+                      </div>
+                    </div>
+                    <pre><code>+switch({
+ id: 'swt41',
+ name: 'swt41',
+ type: 'yesno',
+ size: 'sm',
+ checked: true
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                  <div class="code-example">
+                    <div class="demo">
+                      <div class="switch-button switch-button--md switch-button--yesno">
+                        <input class="switch-button-input" type="checkbox" checked="checked" name="swt42" id="swt42" /><span>
+                          <label class="label label--md" for="swt42"></label></span>
+                      </div>
+                    </div>
+                    <pre><code>+switch({
+ id: 'swt42',
+ name: 'swt42',
+ type: 'yesno',
+ size: 'md',
+ checked: true
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                  <div class="code-example">
+                    <div class="demo">
+                      <div class="switch-button switch-button--lg switch-button--yesno">
+                        <input class="switch-button-input" type="checkbox" checked="checked" name="swt43" id="swt43" /><span>
+                          <label class="label label--lg" for="swt43"></label></span>
+                      </div>
+                    </div>
+                    <pre><code>+switch({
+ id: 'swt43',
+ name: 'swt43',
+ type: 'yesno',
+ size: 'lg',
+ checked: true
+})</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" role="tabpanel" id="v-pills-date" aria-labelledby="v-pills-date-tab">
+              <div class="row">
+                <div class="col-12 col-sm-12 col-md-6">
+                  <div class="code-example">
+                    <h4 class="h4">Date Picker Default</h4>
+                    <div class="demo">
+                      <div class="input-group">
+                        <input class="form__control datetimepicker" type="text" id="date1" />
+                      </div>
+                    </div>
+                    <pre><code>+datetimepicker({
+ id: 'date1'
+})</code></pre>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6">
+                  <div class="code-example">
+                    <h4 class="h4">Date Picker Readonly</h4>
+                    <div class="demo">
+                      <div class="input-group">
+                        <input class="form__control datetimepicker" type="text" readonly="readonly" size="16" />
+                      </div>
+                    </div>
+                    <pre><code>+datetimepicker({
+size: "16",
+ icon: 'zmdi zmdi-calendar',
+ readonly: true
+})</code></pre>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 col-sm-12 col-md-6">
+                  <div class="code-example">
+                    <h4 class="h4">Date Picker Only Date</h4>
+                    <div class="demo">
+                      <div class="input-group">
+                        <input class="form__control datetimepicker" type="text" data-date-format="yyyy-mm-dd" data-min-view="2" />
+                      </div>
+                    </div>
+                    <pre><code>+datetimepicker({
+  icon: 'zmdi zmdi-calendar',
+})(data-date-format="yyyy-mm-dd" data-min-view="2")</code></pre>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-10">
+                  <div class="code-example">
+                    <h4 class="h4">Date Picker Decade View</h4>
+                    <div class="demo">
+                      <div class="input-group">
+                        <input class="form__control datetimepicker" type="text" data-start-view="4" data-date="1979-09-16T05:25:07Z" data-date-format="yyyy-mm-dd - HH:ii" />
+                      </div>
+                    </div>
+                    <pre><code>+datetimepicker({
+  icon: 'zmdi zmdi-calendar',
+})(data-start-view="4" data-date="1979-09-16T05:25:07Z" data-date-format="yyyy-mm-dd - HH:ii")</code></pre>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-10">
+                  <div class="code-example">
+                    <h4 class="h4">Date Picker Year View</h4>
+                    <div class="demo">
+                      <div class="input-group">
+                        <input class="form__control datetimepicker" type="text" data-start-view="3" data-date="1979-09-16T05:25:07Z" data-date-format="yyyy-mm-dd - HH:ii" />
+                      </div>
+                    </div>
+                    <pre><code>+datetimepicker({
+  icon: 'zmdi zmdi-calendar',
+})(data-start-view="3" data-date="1979-09-16T05:25:07Z" data-date-format="yyyy-mm-dd - HH:ii")</code></pre>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-10">
+                  <div class="code-example">
+                    <h4 class="h4">Date Picker Day View</h4>
+                    <div class="demo">
+                      <div class="input-group">
+                        <input class="form__control datetimepicker" type="text" data-start-view="1" data-date="1979-09-16T05:25:07Z" data-date-format="yyyy-mm-dd - HH:ii" />
+                      </div>
+                    </div>
+                    <pre><code>+datetimepicker({
+  icon: 'zmdi zmdi-calendar',
+})(data-start-view="1" data-date="1979-09-16T05:25:07Z" data-date-format="yyyy-mm-dd - HH:ii")</code></pre>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-10">
+                  <div class="code-example">
+                    <h4 class="h4">Date Picker Hour View</h4>
+                    <div class="demo">
+                      <div class="input-group">
+                        <input class="form__control datetimepicker" type="text" data-start-view="0" data-date="1979-09-16T05:25:07Z" data-date-format="yyyy-mm-dd - HH:ii" />
+                      </div>
+                    </div>
+                    <pre><code>+datetimepicker({
+  icon: 'zmdi zmdi-calendar',
+})(data-start-view="0" data-date="1979-09-16T05:25:07Z" data-date-format="yyyy-mm-dd - HH:ii")</code></pre>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-10">
+                  <div class="code-example">
+                    <h4 class="h4">Date Picker Day View Meridian</h4>
+                    <div class="demo">
+                      <div class="input-group">
+                        <input class="form__control datetimepicker" type="text" data-show-meridian="true" data-start-view="1" data-date="1979-09-16T05:25:07Z" data-date-format="yyyy-mm-dd - HH:ii" />
+                      </div>
+                    </div>
+                    <pre><code>+datetimepicker({
+  icon: 'zmdi zmdi-calendar',
+})(data-show-meridian="true" data-start-view="1" data-date="1979-09-16T05:25:07Z" data-date-format="yyyy-mm-dd - HH:ii")</code></pre>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-10">
+                  <div class="code-example">
+                    <h4 class="h4">Date Picker Hour View Meridian</h4>
+                    <div class="demo">
+                      <div class="input-group">
+                        <input class="form__control datetimepicker" type="text" data-show-meridian="true" data-start-view="0" data-date="1979-09-16T05:25:07Z" data-date-format="yyyy-mm-dd - HH:ii" />
+                      </div>
+                    </div>
+                    <pre><code>+datetimepicker({
+  icon: 'zmdi zmdi-calendar',
+})(data-show-meridian="true" data-start-view="0" data-date="1979-09-16T05:25:07Z" data-date-format="yyyy-mm-dd - HH:ii")</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><a class="back-to-top js-to-top"></a>
+    <script src="js/main.js"></script>
+    <div class="overlay"></div>
+  </body>
+</html>
